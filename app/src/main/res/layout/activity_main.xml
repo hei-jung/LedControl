@@ -3,11 +3,6 @@
     android:layout_width="match_parent" android:layout_height="match_parent"
     android:background="#E3C4FF">
 
-    <CheckBox
-        android:id="@+id/cbSearchAllow"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
-
     <LinearLayout
         android:id="@+id/title"
         android:layout_width="match_parent"
@@ -42,7 +37,7 @@
             android:id="@+id/brBtn"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="LED 밝기 조정" />
+            android:text="LED 밝기 조절" />
     </LinearLayout>
 
 </RelativeLayout>
