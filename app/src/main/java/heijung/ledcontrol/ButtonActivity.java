@@ -1,5 +1,6 @@
 package heijung.ledcontrol;
 
+import android.app.Activity;
 import android.bluetooth.BluetoothAdapter;
 import android.content.Intent;
 import android.content.IntentFilter;
@@ -15,14 +16,12 @@ import android.widget.Toast;
 import java.util.List;
 import java.util.Map;
 
-public class ButtonActivity extends AppCompatActivity{
+public class ButtonActivity extends Activity {
 
     BluetoothAdapter bluetoothAdapter;
     CheckBox cbSearchAllow;
 
     ListView searchDeviceList;
-    //List<Map<String,String>> searchDeviceData;
-    //SimpleAdapter searchAdapter;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {

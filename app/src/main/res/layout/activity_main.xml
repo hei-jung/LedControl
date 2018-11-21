@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-android:layout_width="match_parent" android:layout_height="match_parent"
-android:background="#E3C4FF">
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E3C4FF"
+    android:id="@+id/layout"
+    >
 
 <LinearLayout
     android:id="@+id/title"
@@ -9,6 +12,11 @@ android:background="#E3C4FF">
     android:orientation="vertical"
     android:layout_height="wrap_content">
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="HUFS EE 16"
+        android:id="@+id/txtArduino"/>
     <Button
         android:id="@+id/connectBtn"
         android:layout_width="match_parent"
@@ -16,25 +24,25 @@ android:background="#E3C4FF">
         android:text="블루투스 연결" />
 
     <Button
-        android:id="@+id/timeBtn"
+        android:id="@+id/button1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="현재 시간 표시" />
 
     <Button
-        android:id="@+id/tempBtn"
+        android:id="@+id/button2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="현재 기온 표시" />
 
     <Button
-        android:id="@+id/colourBtn"
+        android:id="@+id/button3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="LED 색상 조정" />
 
     <Button
-        android:id="@+id/brBtn"
+        android:id="@+id/button4"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="LED 밝기 조절" />
