@@ -18,9 +18,5 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".ButtonActivity"/>
-        <activity android:name=".TimeActivity"/>
-        <activity android:name=".ColourActivity"/>
-        <activity android:name=".BrActivity"/>
     </application>
 </manifest>

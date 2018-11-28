@@ -2,50 +2,75 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#E3C4FF"
     android:id="@+id/layout"
     >
 
-<LinearLayout
-    android:id="@+id/title"
-    android:layout_width="match_parent"
-    android:orientation="vertical"
-    android:layout_height="wrap_content">
+    <LinearLayout
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txtArduino"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="made by. HUFS EE 16 HEI-JUNG JANG" />
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="현재 시간(12시간)" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="현재 시간(24시간)" />
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="현재 기온 표시" />
+
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="오늘 날짜 표시" />
+
+            <Button
+                android:id="@+id/button5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="LED 색상 조정" />
+
+            <Button
+                android:id="@+id/button6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="LED 밝기 조절" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="52dp"
+        android:layout_height="50dp"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/title"
+        android:background="@drawable/symbol" />
 
     <TextView
-        android:layout_width="wrap_content"
+        android:id="@+id/dateNow"
+        android:layout_width="100dp"
         android:layout_height="wrap_content"
-        android:text="HUFS EE 16"
-        android:id="@+id/txtArduino"/>
-    <Button
-        android:id="@+id/connectBtn"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="블루투스 연결" />
-
-    <Button
-        android:id="@+id/button1"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="현재 시간 표시" />
-
-    <Button
-        android:id="@+id/button2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="현재 기온 표시" />
-
-    <Button
-        android:id="@+id/button3"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="LED 색상 조정" />
-
-    <Button
-        android:id="@+id/button4"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="LED 밝기 조절" />
-</LinearLayout>
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/title"
+        android:textSize="12dp" />
 
 </RelativeLayout>
